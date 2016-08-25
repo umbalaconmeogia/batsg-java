@@ -13,7 +13,7 @@ import org.junit.Test;
 public class Utf8PropertiesTest {
 
   static final String CONFIG_FILE_NAME = "utf8_ja.properties";
-  static final String CONFIG_FILE_PATH = "./fixtures/" + CONFIG_FILE_NAME;
+  static final String CONFIG_FILE_PATH = "./fixtures/properties/" + CONFIG_FILE_NAME;
 
   static final String KEY_HELLO = "text.hello";
 

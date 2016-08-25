@@ -13,13 +13,13 @@ public class Utf8ResourceBundleControlTest {
 
   static final Locale LOCALE = new Locale("ja");
 
-  static final String BUNDLE_DIR = "./fixtures";
+  static final String BUNDLE_DIR = "./fixtures/properties";
 
   static final String KEY_HELLO = "text.hello";
 
   @Test
   public void testNewBundleFromResource() throws URISyntaxException {
-    String baseName = "fixtures.utf8";
+    String baseName = "fixtures.properties.utf8";
     ResourceBundle resourceBundle = ResourceBundle.getBundle(baseName, LOCALE, new Utf8ResourceBundleControl());
     assertEquals("ハロー・ワールド", resourceBundle.getString(KEY_HELLO));
   }
